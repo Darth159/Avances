@@ -6,21 +6,32 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements AfterViewInit {
   title = 'pg-desarrollo-nl';
 
   ngAfterViewInit() {
-    const submenuToggle = document.getElementById('submenu-toggle');
-    const submenu = document.querySelector('.submenu') as HTMLElement;
+    const submenuToggleDesarrolladores = document.getElementById('submenu-toggle-desarrolladores');
+    const submenuDesarrolladores = document.getElementById('submenu-desarrolladores') as HTMLElement;
 
-    if (submenuToggle && submenu) {
-      submenuToggle.addEventListener('click', (e: Event) => {
+    if (submenuToggleDesarrolladores && submenuDesarrolladores) {
+      submenuToggleDesarrolladores.addEventListener('click', (e: Event) => {
         e.preventDefault();
-        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        submenuDesarrolladores.style.display =
+          submenuDesarrolladores.style.display === 'block' ? 'none' : 'block';
+      });
+    }
+
+    const submenuToggleServicios = document.getElementById('submenu-toggle-servicios');
+    const submenuServicios = document.getElementById('submenu-servicios') as HTMLElement;
+
+    if (submenuToggleServicios && submenuServicios) {
+      submenuToggleServicios.addEventListener('click', (e: Event) => {
+        e.preventDefault();
+        submenuServicios.style.display =
+          submenuServicios.style.display === 'block' ? 'none' : 'block';
       });
     }
   }
 }
-

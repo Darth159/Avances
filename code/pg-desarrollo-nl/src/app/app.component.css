@@ -1,3 +1,131 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #111;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+/* Submenú avanzado */
+.submenu-parent {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  color: #fff;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.submenu-section {
+  margin-bottom: 20px;
+}
+
+.submenu-section h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.submenu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.submenu-section ul li {
+  margin-bottom: 10px;
+}
+
+.submenu-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.submenu-section ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Mostrar el submenú al hacer clic */
+.submenu-parent:hover .submenu {
+  display: block;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.submenu-section {
+  margin-bottom: 20px;
+}
+
+.submenu-section h3 {
+  color: #f2a900;
+  margin-bottom: 10px;
+}
+
+.submenu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.submenu-section ul li {
+  margin: 5px 0;
+}
+
+.submenu-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.submenu-section ul li a:hover {
+  color: #f2a900;
+}
+/* Archivo styles.css */
 
 body {
   margin: 0;
@@ -109,3 +237,8 @@ body {
   background-color: #fff;
   color: #000;
 }
+
+
+
+
+

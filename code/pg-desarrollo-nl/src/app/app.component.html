@@ -12,26 +12,57 @@
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
+        <li><a routerLink="/">Inicio</a></li>
         <li class="submenu-parent">
           <a href="#" id="submenu-toggle">Desarrolladores</a>
-          <ul class="submenu"><br>
-            <h2>Empezar a programar</h2>
-            <li><a href="#"><h4>Centro de aprendizaje</h4>
-              Introduccion para nuevos desarrolladores, incluyendo guias básicas <br>
-              y material de inicio.
-            </a></li>
-            <li><a href="#"><h4>Documentacion tecnica</h4>
-              Acceso a la documentacion oficial de APIS, SDKS, y bibliotecas que <br>
-              pueden necesitar.
-            </a></li>
-            <li><a href="#"><h4>Guia de integracion</h4>
-              Paso a paso para integrar los servicios de las empresas de sus proyectos.
-            </a></li>
-          </ul>
+          <div class="submenu" id="submenu-desarrolladores">
+            <div class="submenu-section">
+              <h3>Empezar a programar</h3>
+              <ul>
+                <li><a href="#">Centro de aprendizaje</a></li>
+                <li><a href="#">Documentación técnica</a></li>
+                <li><a href="#">Guía de integración</a></li>
+              </ul>
+            </div>
+            <div class="submenu-section">
+              <h3>Recursos</h3>
+              <ul>
+                <li><a href="#">Herramientas y Bibliotecas</a></li>
+                <li><a href="#">Ejemplos de Código</a></li>
+                <li><a href="#">Entorno de Desarrollo</a></li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contáctanos</a></li>
+        <li class="submenu-parent">
+          <a href="#" id="submenu-toggle-servicios">Servicios</a>
+          <div class="submenu" id="submenu-servicios">
+            <div class="submenu-section">
+              <h3>Desarrollo de Software</h3>
+              <ul>
+                <li><a href="#">Software a Medida</a></li>
+                <li><a href="#">Aplicaciones Web</a></li>
+                <li><a href="#">Aplicaciones Móviles</a></li>
+                <li><a href="#">Desarrollo de Backend y API</a></li>
+              </ul>
+              <h3>Consultoría y Estrategia</h3>
+              <ul>
+                <li><a href="#">Consultoría Tecnología</a></li>
+                <li><a href="#">Transformación Digital</a></li>
+                <li><a href="#">Estrategia de TI</a></li>
+              </ul>
+            </div>
+            <div class="submenu-section">
+              <h3>Soluciones en la Nube</h3>
+              <ul>
+                <li><a href="#">Migración a la Nube</a></li>
+                <li><a href="#">Gestión de la Infraestructura</a></li>
+                <li><a href="#">Computación en la Nube</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a routerLink="/contact">Contáctanos</a></li>
       </ul>
     </nav>
   </header>
